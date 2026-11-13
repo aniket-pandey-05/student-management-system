@@ -1,0 +1,80 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #334155;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 180px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+th {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
