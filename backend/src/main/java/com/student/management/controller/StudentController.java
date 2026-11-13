@@ -4,11 +4,13 @@ package com.student.management.controller;
 import com.student.management.entity.Student;
 import com.student.management.service.StudentService;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/students")
 public class StudentController {
